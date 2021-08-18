@@ -21,11 +21,4 @@ public class TaxProcessorApplication {
 		return Math.round(price * 1.1);
 	}
 
-	@Bean
-	public ApplicationRunner runner(KafkaTemplate<String, Long> template) {
-		return args -> {
-			template.send("originalPrice", 200L);
-		};
-	}
-
 }
