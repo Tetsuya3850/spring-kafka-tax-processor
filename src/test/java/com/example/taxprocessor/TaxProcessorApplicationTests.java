@@ -34,7 +34,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 		topics = { "originalPrice", "taxAddedPrice" },
 		brokerProperties = { "listeners=PLAINTEXT://localhost:9092", "port=9092" }
 )
-@SpringBootTest()
+@SpringBootTest
 class TaxProcessorApplicationTests {
 
 	@Autowired
